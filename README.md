@@ -46,3 +46,59 @@ Now,
 ```bash
 open up you local host and port
 ```
+
+
+
+
+
+
+
+## MLflow
+
+- [Documentation](https://mlflow.org/docs/latest/index.html)
+
+##### cmd
+- mlflow ui
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/SureshkumarRadadiya/Kidney-Disease-Classification-MLflow-DVC.mlflow \
+MLFLOW_TRACKING_USERNAME=SureshkumarRadadiya \
+MLFLOW_TRACKING_PASSWORD=ed740e76af3440a3dc083010f17699c1ed45978e \
+python script.py
+
+Run this to export as env variables:
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/SureshkumarRadadiya/Kidney-Disease-Classification-MLflow-DVC.mlflow
+
+export MLFLOW_TRACKING_USERNAME=SureshkumarRadadiya
+
+export MLFLOW_TRACKING_PASSWORD=ed740e76af3440a3dc083010f17699c1ed45978e
+
+```
+
+
+### DVC cmd
+
+1. dvc init
+2. dvc repro
+3. dvc dag
+
+
+## About MLflow & DVC
+
+MLflow
+
+ - Its Production Grade
+ - Trace all of your expriements
+ - Logging & taging your model
+
+
+DVC 
+
+ - Its very lite weight for POC only
+ - lite weight expriements tracker
+ - It can perform Orchestration (Creating Pipelines)
